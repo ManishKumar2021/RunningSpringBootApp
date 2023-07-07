@@ -11,8 +11,8 @@
 	<groupId>com.dog</groupId>
 	<artifactId>breed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>breed</name>
-	<description>Demo project for Spring Boot</description>
+	<name>DogBreedApp</name>
+	<description>DogBreedApp for Getting All Dog Breeds</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -27,6 +27,39 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Spring Boot Starter Web for RESTful APIs -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Data JPA for database connectivity -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Lombok for reducing boilerplate code -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<!-- Resilience4j Retry for retrying API calls -->
+		<dependency>
+			<groupId>io.github.resilience4j</groupId>
+			<artifactId>resilience4j-spring-boot2</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+
+		<!-- Apache HttpClient for making API calls -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
+</dependency>
 	</dependencies>
 
 	<build>
